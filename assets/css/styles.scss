@@ -1,0 +1,311 @@
+@import './responsive';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    user-select: none;
+    outline: none;
+    letter-spacing: 0.5px;
+    line-height: 150%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+$aqua: #BDDEF2;
+$aqua2: #65A49A;
+$batYellow: #FDE311;
+$batBlack: #8f9397;
+$superRed: #c80000;
+$superBlue: #2883ba;
+$flashRed: #a51818;
+$flashYellow: #dddf3b;
+$wwRed: #A41B30;
+$wwGold: #CB973B;
+$cyborgRed: #DE0808;
+$cyborgSteel: #949FAD;
+
+// all mixins
+@mixin linkHover($color1, $color2) {
+    color: #fff;
+
+    &:hover {
+        background-image: linear-gradient(60deg, $color1, $color2);
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+@mixin active($color1, $color2) {
+    background-image: linear-gradient(60deg, $color1,
+            $color2) !important;
+    background-clip: text !important;
+    color: transparent !important;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile {
+    display: none;
+}
+
+// Start custom styling
+body {
+
+    // Flex row
+    .row {
+        @include flex();
+
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+
+    // Fixed widths
+    .w100 {
+        width: 100%;
+    }
+
+    .w90 {
+        width: 90%;
+    }
+
+    .w80 {
+        width: 80%;
+    }
+
+    .w70 {
+        width: 70%;
+    }
+
+    .w60 {
+        width: 60%;
+    }
+
+    .w50 {
+        width: 50%;
+    }
+
+    .w40 {
+        width: 40%;
+    }
+
+    .w30 {
+        width: 30%;
+    }
+
+    .w20 {
+        width: 20%;
+    }
+
+    .w15 {
+        width: 15%;
+    }
+
+    .w10 {
+        width: 10%;
+    }
+
+    // paddings
+    .pad {
+        padding: 1rem;
+    }
+
+    .pad2 {
+        padding: 2rem;
+    }
+
+    .pad3 {
+        padding: 3rem;
+    }
+
+    .pad4 {
+        padding: 4rem;
+    }
+
+    // Quick Styles
+    .batbg {
+        background-color: #FDE311;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .cap {
+        text-transform: uppercase;
+    }
+
+    a {
+        color: #fff;
+        cursor: pointer;
+        font-size: 13px;
+        text-decoration: none;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            float: left;
+            margin: 0 1rem;
+
+            &:first-child {
+                margin-right: 10%;
+            }
+        }
+    }
+
+    .none {
+        display: none;
+    }
+
+    .hide {
+        opacity: 0;
+        max-height: 0;
+        position: absolute;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    h1 {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    p,
+    .p {
+        font-size: 15px;
+        text-transform: capitalize;
+    }
+
+    span {
+        font-size: 13px;
+        text-transform: uppercase;
+        border-bottom: 1px dashed #000000;
+    }
+
+    .ml {
+        margin-left: 1rem;
+    }
+
+    .mt {
+        margin-top: 1rem;
+    }
+
+    .mb {
+        margin-bottom: 1rem;
+    }
+
+    .mr {
+        margin-right: 1rem;
+    }
+
+    .mr5 {
+        margin-right: 5rem;
+    }
+
+    .jcfs {
+        justify-content: flex-start;
+    }
+
+    .aifs {
+        align-items: flex-start;
+    }
+
+    .grey {
+        color: rgba(255, 255, 255, 0.409);
+    }
+
+}
+
+// header section
+header {
+    width: 100%;
+
+    nav {
+        padding: 2rem;
+        background: #000000;
+
+        .icon {
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            ;
+        }
+    }
+
+    #bat {
+        @include linkHover($batYellow, $batBlack);
+    }
+
+    #super {
+        @include linkHover($superBlue, $superRed);
+    }
+
+    #flash {
+        @include linkHover($flashYellow, $flashRed);
+    }
+
+    #ww {
+        @include linkHover($wwGold, $wwRed);
+    }
+
+    #aqua {
+        @include linkHover($aqua, $aqua2);
+    }
+
+    #cyborg {
+        @include linkHover($cyborgSteel, $cyborgRed);
+    }
+
+    .active {
+        @include active(#a5ffba, #ff8a8a);
+    }
+
+    .btn {
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: transparent;
+        border: 1px solid white;
+        cursor: pointer;
+        @include linkHover($flashYellow, $flashRed);
+    }
+
+}
+
+// main section
+main {
+    .container {
+
+        img {
+            width: 600px;
+            height: 550px;
+        }
+    }
+}
+
+// footer section
+footer {
+    background: #000000;
+    color: white;
+
+    ul {
+        li {
+            float: none !important;
+            margin-bottom: 0.5rem;
+        }
+    }
+}

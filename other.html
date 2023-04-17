@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* CSS for tags */
+        .tag {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Element to add tags to -->
+    <div id="myElement">
+        <p>Element content</p>
+    </div>
+
+    <!-- Buttons to add tags -->
+    <button id="addTag1">Add Tag 1</button>
+    <button id="addTag2">Add Tag 2</button>
+
+    <script>
+        $(document).ready(function () {
+            // Click event handler for "Add Tag 1" button
+            $("#addTag1").on("click", function () {
+                // Append a <span> tag with class "tag1" to the element
+                $("#myElement").append("<span class='tag1'>Tag 1</span>");
+            });
+
+            // Click event handler for "Add Tag 2" button
+            $("#addTag2").on("click", function () {
+                // Replace the content of the element with a <span> tag with class "tag2"
+                $("#myElement").html("<span class='tag2'>Tag 2</span>");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  body .w50,
+  body .w80,
+  body .w20,
+  body .w30 {
+    width: 100% !important;
+  }
+  body .mr5 {
+    margin-right: 0 !important;
+  }
+  .mobile {
+    display: block !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+  ul li {
+    float: none !important;
+    margin: 0 1rem 2rem !important;
+  }
+  ul li a {
+    color: white !important;
+  }
+  .mobileMenu {
+    padding: 1rem;
+    z-index: 1;
+    background: #000;
+  }
+  main .pad4 {
+    padding: 2rem !important;
+  }
+  main .container .row {
+    display: block !important;
+  }
+  main .container .row img {
+    width: 300px !important;
+    height: 100%;
+  }
+  footer .pad4 {
+    padding: 2rem !important;
+  }
+  footer .w20 {
+    margin-top: 2rem !important;
+  }
+  footer .row {
+    display: block !important;
+  }
+  footer .row img {
+    width: 300px !important;
+    height: 100%;
+  }
+  footer ul li {
+    margin-bottom: 0.5rem !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  outline: none;
+  letter-spacing: 0.5px;
+  line-height: 150%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.mobile {
+  display: none;
+}
+
+body .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body .w100 {
+  width: 100%;
+}
+body .w90 {
+  width: 90%;
+}
+body .w80 {
+  width: 80%;
+}
+body .w70 {
+  width: 70%;
+}
+body .w60 {
+  width: 60%;
+}
+body .w50 {
+  width: 50%;
+}
+body .w40 {
+  width: 40%;
+}
+body .w30 {
+  width: 30%;
+}
+body .w20 {
+  width: 20%;
+}
+body .w15 {
+  width: 15%;
+}
+body .w10 {
+  width: 10%;
+}
+body .pad {
+  padding: 1rem;
+}
+body .pad2 {
+  padding: 2rem;
+}
+body .pad3 {
+  padding: 3rem;
+}
+body .pad4 {
+  padding: 4rem;
+}
+body .batbg {
+  background-color: #FDE311;
+}
+body .center {
+  text-align: center;
+}
+body .cap {
+  text-transform: uppercase;
+}
+body a {
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  text-decoration: none;
+}
+body p {
+  font-size: 13px;
+}
+body ul {
+  list-style: none;
+}
+body ul li {
+  float: left;
+  margin: 0 1rem;
+}
+body ul li:first-child {
+  margin-right: 10%;
+}
+body .none {
+  display: none;
+}
+body .hide {
+  opacity: 0;
+  max-height: 0;
+  position: absolute;
+}
+body .right {
+  text-align: right;
+}
+body h1 {
+  font-size: 25px;
+  font-weight: 900;
+}
+body p,
+body .p {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+body span {
+  font-size: 13px;
+  text-transform: uppercase;
+  border-bottom: 1px dashed #000000;
+}
+body .ml {
+  margin-left: 1rem;
+}
+body .mt {
+  margin-top: 1rem;
+}
+body .mb {
+  margin-bottom: 1rem;
+}
+body .mr {
+  margin-right: 1rem;
+}
+body .mr5 {
+  margin-right: 5rem;
+}
+body .jcfs {
+  justify-content: flex-start;
+}
+body .aifs {
+  align-items: flex-start;
+}
+body .grey {
+  color: rgba(255, 255, 255, 0.409);
+}
+
+header {
+  width: 100%;
+}
+header nav {
+  padding: 2rem;
+  background: #000000;
+}
+header nav .icon {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+header #bat {
+  color: #fff;
+}
+header #bat:hover {
+  background-image: linear-gradient(60deg, #FDE311, #8f9397);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+header #super {
+  color: #fff;
+}
+header #super:hover {
+  background-image: linear-gradient(60deg, #2883ba, #c80000);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+header #flash {
+  color: #fff;
+}
+header #flash:hover {
+  background-image: linear-gradient(60deg, #dddf3b, #a51818);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+header #ww {
+  color: #fff;
+}
+header #ww:hover {
+  background-image: linear-gradient(60deg, #CB973B, #A41B30);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+header #aqua {
+  color: #fff;
+}
+header #aqua:hover {
+  background-image: linear-gradient(60deg, #BDDEF2, #65A49A);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+header #cyborg {
+  color: #fff;
+}
+header #cyborg:hover {
+  background-image: linear-gradient(60deg, #949FAD, #DE0808);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+header .active {
+  background-image: linear-gradient(60deg, #a5ffba, #ff8a8a) !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  color: transparent !important;
+}
+header .btn {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  color: #fff;
+}
+header .btn:hover {
+  background-image: linear-gradient(60deg, #dddf3b, #a51818);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+main .container img {
+  width: 600px;
+  height: 550px;
+}
+
+footer {
+  background: #000000;
+  color: white;
+}
+footer ul li {
+  float: none !important;
+  margin-bottom: 0.5rem;
+}/*# sourceMappingURL=styles.css.map */
