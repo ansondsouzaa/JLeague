@@ -9,6 +9,10 @@
             width: 100% !important;
         }
 
+        .ml3 {
+            margin-left: 0 !important;
+        }
+
         .mr5 {
             margin-right: 0 !important;
         }
@@ -52,10 +56,6 @@
             .row {
                 display: block !important;
 
-                img {
-                    width: 300px !important;
-                    height: 100%;
-                }
             }
         }
     }
@@ -72,10 +72,6 @@
         .row {
             display: block !important;
 
-            img {
-                width: 300px !important;
-                height: 100%;
-            }
         }
 
         ul {

@@ -16,9 +16,11 @@ $("#catchTheFlash").on("click", function () {
       "You clicked Catch the Flash \n\nLet's play catch the flash game. The flash will now run on the screen from left to right in full speed. Click on him to catch him."
     );
     $("#runBarryRun").toggleClass("hide");
+    $("#catchTheFlash").html('Quit catch the flash');
   } else {
     alert("Quit the game? \nYou can always click the button to play again.");
     $("#runBarryRun").toggleClass("hide");
+    $("#catchTheFlash").html("Play catch the flash");
   }
 });
 

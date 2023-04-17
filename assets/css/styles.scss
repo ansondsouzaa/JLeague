@@ -201,6 +201,10 @@ body {
         margin-left: 1rem;
     }
 
+    .ml3 {
+        margin-left: 5rem;
+    }
+
     .mt {
         margin-top: 1rem;
     }
@@ -289,10 +293,11 @@ header {
 // main section
 main {
     .container {
-
-        img {
-            width: 600px;
-            height: 550px;
+        .row {
+            img{
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }

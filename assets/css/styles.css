@@ -5,6 +5,9 @@
   body .w30 {
     width: 100% !important;
   }
+  body .ml3 {
+    margin-left: 0 !important;
+  }
   body .mr5 {
     margin-right: 0 !important;
   }
@@ -32,10 +35,6 @@
   main .container .row {
     display: block !important;
   }
-  main .container .row img {
-    width: 300px !important;
-    height: 100%;
-  }
   footer .pad4 {
     padding: 2rem !important;
   }
@@ -44,10 +43,6 @@
   }
   footer .row {
     display: block !important;
-  }
-  footer .row img {
-    width: 300px !important;
-    height: 100%;
   }
   footer ul li {
     margin-bottom: 0.5rem !important;
@@ -182,6 +177,9 @@ body span {
 body .ml {
   margin-left: 1rem;
 }
+body .ml3 {
+  margin-left: 5rem;
+}
 body .mt {
   margin-top: 1rem;
 }
@@ -291,9 +289,9 @@ header .btn:hover {
   color: transparent;
 }
 
-main .container img {
-  width: 600px;
-  height: 550px;
+main .container .row img {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
